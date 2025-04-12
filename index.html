@@ -1,0 +1,1636 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🎉 DevCation 2025: Unleash Your Inner Dev!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Montserrat", sans-serif;
+        background-color: #121212; /* Darker, more immersive background */
+        color: #f0f0f0; /* Off-white for better contrast */
+        scroll-behavior: smooth;
+      }
+      .navbar {
+        background-color: rgba(
+          20,
+          20,
+          20,
+          0.9
+        ); /* Dark, slightly transparent navbar */
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+      }
+      .nav-link {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+      }
+      .nav-link:hover {
+        color: #ff6b6b; /* Bright coral hover */
+        transform: scale(1.1);
+      }
+      .hero {
+        background: linear-gradient(
+          135deg,
+          #ff4081,
+          #673ab7
+        ); /* Funky gradient */
+        overflow: hidden;
+        position: relative;
+        padding-top: 16rem; /* Larger padding */
+        padding-bottom: 12rem;
+      }
+      .hero-title {
+        font-family: "Pacifico", cursive;
+        font-size: 5rem; /* Larger, playful font */
+        font-weight: 400;
+        line-height: 1.1;
+        color: #fff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+      .hero-subtitle {
+        font-size: 1.75rem;
+        color: #f48fb1; /* Lighter pink */
+        font-weight: 300;
+        letter-spacing: 1px;
+        margin-top: 1rem;
+      }
+      .hero-button {
+        background-color: #ffc107; /* Bright yellow */
+        color: #212121;
+        font-weight: 700;
+        padding: 1rem 2.5rem; /* Larger button */
+        border-radius: 50px; /* Pill shape */
+        box-shadow: 0 6px 8px -1px rgba(0, 0, 0, 0.3);
+        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out,
+          background-color 0.3s ease-in-out;
+      }
+      .hero-button:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 10px -1px rgba(0, 0, 0, 0.4);
+        background-color: #ffe082;
+      }
+      .hero-image-container {
+        perspective: 1000px;
+        position: absolute;
+        top: 50%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+      }
+      .hero-image {
+        transform: rotateY(30deg) rotateX(15deg) scale(1.2);
+        box-shadow: -15px 15px 30px rgba(0, 0, 0, 0.4);
+        border-radius: 12px;
+        transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+      }
+      .hero-image:hover {
+        transform: rotateY(0deg) rotateX(0deg) scale(1.25);
+      }
+      .section-title {
+        font-family: "Pacifico", cursive;
+        font-size: 3.5rem; /* Larger, playful font */
+        font-weight: 400;
+        color: #f48fb1; /* Funky title color */
+        text-align: center;
+        margin-bottom: 2rem;
+        letter-spacing: 1px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+      }
+      .section-title::before {
+        content: "✨";
+        position: absolute;
+        bottom: -1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.5rem;
+      }
+      .feature-card {
+        background-color: #212121;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      }
+      .feature-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+      }
+      .feature-icon {
+        color: #ff6b6b; /* Bright coral */
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        animation: pulse 2s infinite alternate; /* Funky pulse animation */
+      }
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        100% {
+          transform: scale(1.1);
+        }
+      }
+      .about-section {
+        background-color: #212121;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      .about-image {
+        border-radius: 12px;
+        box-shadow: 8px 8px 0 #ffc107; /* Bright yellow shadow */
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      }
+      .about-image:hover {
+        transform: scale(1.05);
+        box-shadow: 12px 12px 0 #f48fb1; /* Lighter pink shadow */
+      }
+      .contact-form input,
+      .contact-form textarea {
+        background-color: #303030;
+        border: 2px solid #424242;
+        color: #f0f0f0;
+        border-radius: 8px;
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+      }
+      .contact-form input:focus,
+      .contact-form textarea:focus {
+        outline: none;
+        border-color: #ff6b6b;
+        box-shadow: 0 0 0 0.2rem rgba(255, 107, 107, 0.25);
+      }
+      .submit-button {
+        background-color: #673ab7; /* Deep purple */
+        color: #fff;
+        font-weight: 700;
+        border-radius: 50px;
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+        transition: background-color 0.3s ease-in-out,
+          transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
+      .submit-button:hover {
+        background-color: #7e57c2;
+        transform: translateY(-3px);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+      }
+      .footer {
+        background-color: #212121;
+        border-top: 3px solid #ffc107; /* Bright yellow border */
+        padding: 4rem 0;
+      }
+      .footer-link {
+        font-weight: 500;
+        transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+      }
+      .footer-link:hover {
+        color: #ff6b6b;
+        transform: translateX(5px);
+      }
+      .social-icon {
+        font-size: 2rem;
+        color: #f48fb1;
+        transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+      }
+      .social-icon:hover {
+        color: #ffc107;
+        transform: rotate(360deg) scale(1.2); /* Funky rotation */
+      }
+      /* Animations on Scroll */
+      .fade-in {
+        opacity: 0;
+        transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      }
+      .fade-in.active {
+        opacity: 1;
+      }
+      .slide-up {
+        transform: translateY(100px);
+        opacity: 0;
+        transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+          opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      }
+      .slide-up.active {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      .slide-left {
+        transform: translateX(-100px);
+        opacity: 0;
+        transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+          opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      }
+      .slide-left.active {
+        transform: translateX(0);
+        opacity: 1;
+      }
+      .slide-right {
+        transform: translateX(100px);
+        opacity: 0;
+        transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+          opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      }
+      .slide-right.active {
+        transform: translateX(0);
+        opacity: 1;
+      }
+      .zoom-in {
+        transform: scale(0.7);
+        opacity: 0;
+        transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+          opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      }
+      .zoom-in.active {
+        transform: scale(1);
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-gray-900 text-gray-300 font-sans leading-normal tracking-normal"
+  >
+    <nav class="navbar fixed top-0 z-50 w-full">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+          <div class="flex-shrink-0">
+            <a
+              href="#"
+              class="text-xl font-bold text-yellow-400 animate__animated animate__bounceInLeft"
+              >DevCation <span class="text-pink-400">2025</span>
+              <i class="fa-solid fa-rocket ml-2"></i
+            ></a>
+          </div>
+
+          <div class="hidden md:block">
+            <div
+              class="ml-10 flex items-baseline space-x-6 animate__animated animate__fadeInDown animate__delay-1s"
+            >
+              <a
+                href="#hero"
+                class="nav-link text-gray-300 hover:text-yellow-300 px-3 py-2 rounded-md text-lg transition duration-300"
+                >Home</a
+              >
+              <a
+                href="#about"
+                class="nav-link text-gray-300 hover:text-yellow-300 px-3 py-2 rounded-md text-lg transition duration-300"
+                >About</a
+              >
+              <a
+                href="#speakers"
+                class="nav-link text-gray-300 hover:text-yellow-300 px-3 py-2 rounded-md text-lg transition duration-300"
+                >Speakers</a
+              >
+              <a
+                href="#schedule"
+                class="nav-link text-gray-300 hover:text-yellow-300 px-3 py-2 rounded-md text-lg transition duration-300"
+                >Schedule</a
+              >
+              <a
+                href="#sponsors"
+                class="nav-link text-gray-300 hover:text-yellow-300 px-3 py-2 rounded-md text-lg transition duration-300"
+                >Sponsors</a
+              >
+              <a
+                href="#contact"
+                class="nav-link text-gray-300 hover:text-yellow-300 px-3 py-2 rounded-md text-lg transition duration-300"
+                >Contact</a
+              >
+              <a
+                href="#register"
+                class="bg-pink-500 hover:bg-pink-600 text-white px-5 py-3 rounded-full text-lg font-semibold transition duration-300"
+                >Register!</a
+              >
+            </div>
+          </div>
+
+          <div class="-mr-2 flex md:hidden">
+            <button
+              id="mobile-menu-button"
+              type="button"
+              class="bg-gray-800 inline-flex items-center justify-center p-3 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="md:hidden" id="mobile-menu">
+        <div
+          class="px-2 pt-2 pb-3 space-y-1 sm:px-3 animate__animated animate__fadeInDown"
+        >
+          <a
+            href="#hero"
+            class="bg-pink-500 text-white block px-3 py-2 rounded-md text-base font-medium"
+            aria-current="page"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            >About</a
+          >
+          <a
+            href="#speakers"
+            class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            >Speakers</a
+          >
+          <a
+            href="#schedule"
+            class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            >Schedule</a
+          >
+          <a
+            href="#sponsors"
+            class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            >Sponsors</a
+          >
+          <a
+            href="#contact"
+            class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            >Contact</a
+          >
+          <a
+            href="#register"
+            class="bg-pink-500 hover:bg-pink-600 text-white block px-3 py-2 rounded-md text-base font-semibold transition duration-300"
+            >Register!</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <section id="hero" class="hero flex items-center justify-center relative">
+      <div class="container mx-auto text-center">
+        <h1
+          class="hero-title text-white animate__animated animate__jackInTheBox"
+        >
+          DevCation <span class="text-yellow-400">2025</span>
+          <i class="fa-solid fa-code text-pink-400"></i>
+        </h1>
+        <p
+          class="hero-subtitle mt-4 mb-8 animate__animated animate__fadeIn animate__delay-1s"
+        >
+          Unleash your inner developer at the most electrifying tech conference!
+        </p>
+        <button
+          class="hero-button animate__animated animate__pulse animate__infinite animate__delay-2s"
+        >
+          Get Your Spark On! <i class="fa-solid fa-bolt ml-2"></i>
+        </button>
+      </div>
+      <div class="absolute bottom-0 left-0 right-0">
+        <svg
+          class="waves"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 24 150 40"
+          preserveAspectRatio="none"
+          shape-rendering="auto"
+        >
+          <defs>
+            <path
+              id="gentle-wave"
+              d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+            />
+          </defs>
+          <g class="parallax">
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="0"
+              fill="rgba(255, 107, 107, 0.4)"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="3"
+              fill="rgba(255, 193, 7, 0.3)"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="5"
+              fill="rgba(103, 58, 183, 0.2)"
+            />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#121212" />
+          </g>
+        </svg>
+      </div>
+      <div
+        class="absolute top-1/4 right-10 animate__animated animate__rotateInDownRight animate__delay-1s"
+      >
+        <i class="fa-solid fa-terminal text-yellow-400 text-6xl opacity-70"></i>
+      </div>
+      <div
+        class="absolute bottom-1/4 left-10 animate__animated animate__rotateInUpLeft animate__delay-1.5s"
+      >
+        <i
+          class="fa-solid fa-code-branch text-pink-400 text-5xl opacity-70"
+        ></i>
+      </div>
+    </section>
+
+    <section id="about" class="py-32 bg-gray-800 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 fade-in">
+        <h2
+          class="section-title text-pink-400 animate__animated animate__flipInX"
+        >
+          Get Hyped About DevCation!
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+          <div class="slide-left animate__animated animate__slideInLeft">
+            <img
+              src="https://devcation-2025.vercel.app/hero1.jpeg"
+              alt="About DevCation"
+              class="about-image w-full md:w-5/6 lg:w-4/5 xl:w-3/4 2xl:w-2/3 mx-auto rounded-lg shadow-xl transition-transform transform hover:scale-110"
+            />
+          </div>
+          <div
+            class="slide-right animate__animated animate__slideInRight animate__delay-0.3s"
+          >
+            <h3
+              class="text-2xl font-semibold text-yellow-300 mb-6 animate__animated animate__fadeInUp"
+            >
+              Our Spark
+            </h3>
+            <p
+              class="text-lg text-gray-400 mb-8 animate__animated animate__fadeInUp animate__delay-0.5s"
+            >
+              DevCation 2025 is where the magic of code comes alive! We're not
+              your average conference. Expect mind-blowing talks, hands-on labs
+              that'll make your fingers fly, and a community buzzing with
+              electrifying energy.
+            </p>
+            <h3
+              class="text-2xl font-semibold text-yellow-300 mb-6 animate__animated animate__fadeInUp animate__delay-0.7s"
+            >
+              What's the Vibe?
+            </h3>
+            <ul
+              class="list-disc list-inside text-gray-400 mb-8 animate__animated animate__fadeInUp animate__delay-0.9s"
+            >
+              <li>🚀 Talks that'll launch your skills into orbit.</li>
+              <li>
+                🛠️ Workshops where you'll build awesome stuff, like, for real.
+              </li>
+              <li>
+                🤝 Networking that feels more like making friends than awkward
+                handshakes.
+              </li>
+              <li>
+                🍕 Food that fuels your coding adventures (and it's tasty!).
+              </li>
+            </ul>
+            <button
+              class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 py-3 px-8 rounded-full font-semibold transition duration-300 zoom-in animate__animated animate__zoomIn animate__delay-1.1s"
+            >
+              Join the Fun!
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="absolute top-10 left-10 animate__animated animate__heartBeat animate__infinite animate__delay-2s"
+      >
+        <i class="fa-solid fa-heart text-pink-400 text-4xl opacity-60"></i>
+      </div>
+      <div
+        class="absolute bottom-10 right-10 animate__animated animate__starSpin animate__infinite animate__delay-3s"
+      >
+        <i class="fa-solid fa-star text-yellow-400 text-5xl opacity-60"></i>
+      </div>
+    </section>
+    <section id="schedule" class="py-32 bg-gray-800 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 fade-in">
+        <h2
+          class="section-title text-yellow-400 animate__animated animate__flipInY"
+        >
+          Catch the Code Rhythms!
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div
+            class="bg-gray-900 rounded-lg shadow-md hover:shadow-lg transition duration-300 slide-right animate__animated animate__slideInRight"
+          >
+            <div class="p-8">
+              <h4 class="text-xl font-semibold text-pink-300 mb-4">
+                <i class="far fa-calendar-alt mr-3 text-yellow-400"></i> Key
+                Dates
+              </h4>
+              <ul class="list-disc list-inside text-gray-400">
+                <li class="mb-2">
+                  <span class="font-semibold text-yellow-300"
+                    >April 4th, 2025</span
+                  >
+                  - 🎉Opening Ceremony & Registration🚀 <br />Submission for all
+                  Mini Events and the Registration for the Hackathon Starts
+                </li>
+                <li class="mb-2">
+                  <span class="font-semibold text-yellow-300"
+                    >April 8th, 2025</span
+                  >
+                  - 🔒 Hacking Period Starts! 🔓 <br />Get ready to code,
+                  create, and innovate!
+                </li>
+                <li class="mb-2">
+                  <span class="font-semibold text-yellow-300"
+                    >April 12th, 2025</span
+                  >
+                  - ⏰ Hacking Period Ends ⏰<br />
+                  Make sure to wrap up your projects and prepare for submission.
+                </li>
+                <li class="mb-2">
+                  <span class="font-semibold text-yellow-300"
+                    >April 13th, 2025</span
+                  >
+                  - ⏰ Mentorship Round Starts ⏰ <br />Providing mentorship and
+                  feedback for every submitted project.
+                </li>
+                <li>
+                  <span class="font-semibold text-yellow-300"
+                    >April 15th, 2025</span
+                  >
+                  - 📅 Final pitching and closing ceremony. 📅 <br />Don`t miss
+                  out on this memorable event!
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="bg-gray-900 rounded-lg shadow-md hover:shadow-lg transition duration-300 slide-left animate__animated animate__slideInLeft animate__delay-200ms"
+          >
+            <div class="p-8">
+              <h4 class="text-xl font-semibold text-pink-300 mb-4">
+                <i class="fas fa- дорожка mr-3 text-yellow-400"></i> Event
+                Tracks
+              </h4>
+              <ul class="list-disc list-inside text-gray-400">
+                <li class="mb-2">
+                  <span class="font-semibold text-yellow-300">HealthTech</span>
+                </li>
+                <li class="mb-2">
+                  <span class="font-semibold text-yellow-300">EdTech</span>
+                </li>
+                <li class="mb-2">
+                  <span class="font-semibold text-yellow-300"
+                    >Sustainable Development (Open Innovation)</span
+                  >
+                </li>
+                <li>
+                  <span class="font-semibold text-yellow-300">FinTech</span>
+                </li>
+              </ul>
+              <br />
+              <h4 class="text-xl font-semibold text-pink-300 mb-4">
+                <i class="far fa-calendar-alt mr-3 text-yellow-400"></i> Event
+                Highlights
+              </h4>
+              <ul class="list-disc list-inside text-gray-400">
+                <li class="mb-2">Opening Ceremony</li>
+                <li class="mb-2">Hackathon</li>
+                <li class="mb-2">Mini Events</li>
+                <li class="mb-2">Mentorship Round</li>
+                <li>Final Pitching and Closing Ceremony</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mt-12 text-center zoom-in animate__animated animate__zoomIn animate__delay-400ms"
+        >
+          <button
+            class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 py-4 px-10 rounded-full text-lg font-semibold transition duration-300"
+          >
+            See the Full Schedule!
+          </button>
+        </div>
+      </div>
+      <div
+        class="absolute top-10 left-10 animate__animated animate__rotateInDownLeft"
+      >
+        <i class="fa-solid fa-clock text-yellow-400 text-5xl opacity-50"></i>
+      </div>
+      <div
+        class="absolute bottom-10 right-10 animate__animated animate__rotateInUpRight animate__delay-1s"
+      >
+        <i
+          class="fa-solid fa-calendar-days text-pink-400 text-6xl opacity-50"
+        ></i>
+      </div>
+    </section>
+
+    <section id="speakers" class="py-32 bg-gray-900 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 fade-in">
+        <h2
+          class="section-title text-yellow-400 animate__animated animate__rollIn"
+        >
+          Meet the Rockstars of Code!
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
+          <div
+            class="bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition duration-300 slide-up animate__animated animate__slideInUp"
+          >
+            <img
+              src="https://media.licdn.com/dms/image/v2/D5603AQGlGLU4MuN2DQ/profile-displayphoto-shrink_200_200/B56ZQbshyQHQAg-/0/1735631446289?e=2147483647&v=beta&t=fZuDBQAdVSzUxlUEiOFtve3xdB4o4gDUhWc_llkevGw"
+              alt="Kartik Mathur"
+              class="rounded-t-lg w-full h-64 object-cover"
+            />
+            <div class="p-8">
+              <h4
+                class="text-xl font-semibold text-pink-300 mb-3 animate__animated animate__fadeIn"
+              >
+                Kartik Mathur
+              </h4>
+              <p
+                class="text-gray-400 text-sm mb-4 animate__animated animate__fadeIn animate__delay-0.2s"
+              >
+                Chief Wizard
+              </p>
+              <div
+                class="flex justify-center space-x-6 animate__animated animate__fadeIn animate__delay-0.4s"
+              >
+                <a href="#" class="text-yellow-400 hover:text-yellow-300"
+                  ><i class="fab fa-twitter fa-2x"></i
+                ></a>
+                <a href="#" class="text-yellow-400 hover:text-yellow-300"
+                  ><i class="fab fa-linkedin fa-2x"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition duration-300 slide-up animate__animated animate__slideInUp animate__delay-100ms"
+          >
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi_D6-TymMNhN1zJGlWDFHYjYScseLwbgquQ&s"
+              alt="Vani Chitkara"
+              class="rounded-t-lg w-full h-64 object-cover"
+            />
+            <div class="p-8">
+              <h4
+                class="text-xl font-semibold text-pink-300 mb-3 animate__animated animate__fadeIn"
+              >
+                Vani Chitkara
+              </h4>
+              <p
+                class="text-gray-400 text-sm mb-4 animate__animated animate__fadeIn animate__delay-0.2s"
+              >
+                Digital Daredevil
+              </p>
+              <div
+                class="flex justify-center space-x-6 animate__animated animate__fadeIn animate__delay-0.4s"
+              >
+                <a href="#" class="text-yellow-400 hover:text-yellow-300"
+                  ><i class="fab fa-github fa-2x"></i
+                ></a>
+                <a href="#" class="text-yellow-400 hover:text-yellow-300"
+                  ><i class="fab fa-stack-overflow fa-2x"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition duration-300 slide-up animate__animated animate__slideInUp animate__delay-200ms"
+          >
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQE6hPkZxGw6maxHNF_3jLulfIRySOkwx9Wg&s"
+              alt="Aarnav Jindal"
+              class="rounded-t-lg w-full h-64 object-cover"
+            />
+            <div class="p-8">
+              <h4
+                class="text-xl font-semibold text-pink-300 mb-3 animate__animated animate__fadeIn"
+              >
+                Aarnav Jindal
+              </h4>
+              <p
+                class="text-gray-400 text-sm mb-4 animate__animated animate__fadeIn animate__delay-0.2s"
+              >
+                Code Sorcerer
+              </p>
+              <div
+                class="flex justify-center space-x-6 animate__animated animate__fadeIn animate__delay-0.4s"
+              >
+                <a href="#" class="text-yellow-400 hover:text-yellow-300"
+                  ><i class="fab fa-dribbble fa-2x"></i
+                ></a>
+                <a href="#" class="text-yellow-400 hover:text-yellow-300"
+                  ><i class="fab fa-behance fa-2x"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mt-12 text-center zoom-in animate__animated animate__zoomIn animate__delay-300ms"
+        >
+          <button
+            class="bg-pink-500 hover:bg-pink-600 text-white py-4 px-10 rounded-full text-lg font-semibold transition duration-300"
+          >
+            Meet All Our Awesome Judges!
+          </button>
+        </div>
+      </div>
+      <div
+        class="absolute top-10 right-10 animate__animated animate__rotateInDownRight"
+      >
+        <i
+          class="fa-solid fa-microphone-lines text-pink-400 text-5xl opacity-50"
+        ></i>
+      </div>
+      <div
+        class="absolute bottom-10 left-10 animate__animated animate__rotateInUpLeft animate__delay-1s"
+      >
+        <i class="fa-solid fa-podcast text-yellow-400 text-6xl opacity-50"></i>
+      </div>
+    </section>
+
+    <section id="mentors" class="py-32 bg-gray-800 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 fade-in">
+        <h2
+          class="section-title text-yellow-400 animate__animated animate__flipInY"
+        >
+          Meet Our Mentors
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          <div
+            class="bg-gray-900 rounded-lg shadow-md hover:shadow-lg transition duration-300 slide-up animate__animated animate__slideInUp"
+          >
+            <div class="p-4 text-center">
+              <img
+                src="https://via.placeholder.com/100"
+                alt="Mentor 1"
+                class="mx-auto rounded-full mb-2 border-2 border-purple-500"
+              />
+              <h4 class="text-lg font-semibold text-purple-300 mb-1">
+                Radhika Bansal
+              </h4>
+              <p class="text-gray-400 text-sm">Expertise: Web Development</p>
+              <p class="text-gray-400 text-sm">
+                помогать: "I can help with front-end, back-end, and database."
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-gray-900 rounded-lg shadow-md hover:shadow-lg transition duration-300 slide-up animate__animated animate__slideInUp animate__delay-100ms"
+          >
+            <div class="p-4 text-center">
+              <img
+                src="https://via.placeholder.com/100"
+                alt="Mentor 2"
+                class="mx-auto rounded-full mb-2 border-2 border-purple-500"
+              />
+              <h4 class="text-lg font-semibold text-purple-300 mb-1">
+                Sanidhya Goel
+              </h4>
+              <p class="text-gray-400 text-sm">Expertise: Mobile Development</p>
+              <p class="text-gray-400 text-sm">
+                помогать: "I guide you in iOS & Android development."
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-gray-900 rounded-lg shadow-md hover:shadow-lg transition duration-300 slide-up animate__animated animate__slideInUp animate__delay-200ms"
+          >
+            <div class="p-4 text-center">
+              <img
+                src="https://via.placeholder.com/100"
+                alt="Mentor 3"
+                class="mx-auto rounded-full mb-2 border-2 border-purple-500"
+              />
+              <h4 class="text-lg font-semibold text-purple-300 mb-1">
+                Tejaswi Tyagi
+              </h4>
+              <p class="text-gray-400 text-sm">Expertise: UI/UX Design</p>
+              <p class="text-gray-400 text-sm">
+                помогать: "I assist in creating user-friendly designs."
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-gray-900 rounded-lg shadow-md hover:shadow-lg transition duration-300 slide-up animate__animated animate__slideInUp animate__delay-300ms"
+          >
+            <div class="p-4 text-center">
+              <img
+                src="https://via.placeholder.com/100"
+                alt="Mentor 4"
+                class="mx-auto rounded-full mb-2 border-2 border-purple-500"
+              />
+              <h4 class="text-lg font-semibold text-purple-300 mb-1">
+                Akanksha Jha
+              </h4>
+              <p class="text-gray-400 text-sm">Expertise: Data Science</p>
+              <p class="text-gray-400 text-sm">
+                помогать: "I can help with machine learning and data analysis."
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-gray-900 rounded-lg shadow-md hover:shadow-lg transition duration-300 slide-up animate__animated animate__slideInUp animate__delay-400ms"
+          >
+            <div class="p-4 text-center">
+              <img
+                src="https://via.placeholder.com/100"
+                alt="Mentor 5"
+                class="mx-auto rounded-full mb-2 border-2 border-purple-500"
+              />
+              <h4 class="text-lg font-semibold text-purple-300 mb-1">
+                Vikranth Udandarao
+              </h4>
+              <p class="text-gray-400 text-sm">Expertise: Cloud Computing</p>
+              <p class="text-gray-400 text-sm">
+                помогать: "I specialize in cloud platforms like AWS and Azure."
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-gray-900 rounded-lg shadow-md hover:shadow-lg transition duration-300 slide-up animate__animated animate__slideInUp animate__delay-500ms"
+          >
+            <div class="p-4 text-center">
+              <img
+                src="https://via.placeholder.com/100"
+                alt="Mentor 6"
+                class="mx-auto rounded-full mb-2 border-2 border-purple-500"
+              />
+              <h4 class="text-lg font-semibold text-purple-300 mb-1">
+                Rudra Pratap Dash
+              </h4>
+              <p class="text-gray-400 text-sm">Expertise: Cybersecurity</p>
+              <p class="text-gray-400 text-sm">
+                помогать: "I can assist with security best practices."
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-gray-900 rounded-lg shadow-md hover:shadow-lg transition duration-300 slide-up animate__animated animate__slideInUp animate__delay-600ms"
+          >
+            <div class="p-4 text-center">
+              <img
+                src="https://via.placeholder.com/100"
+                alt="Mentor 7"
+                class="mx-auto rounded-full mb-2 border-2 border-purple-500"
+              />
+              <h4 class="text-lg font-semibold text-purple-300 mb-1">
+                Aishvi Guleria
+              </h4>
+              <p class="text-gray-400 text-sm">Expertise: Game Development</p>
+              <p class="text-gray-400 text-sm">
+                помогать: "I can help with game engines and design."
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-gray-900 rounded-lg shadow-md hover:shadow-lg transition duration-300 slide-up animate__animated animate__slideInUp animate__delay-700ms"
+          >
+            <div class="p-4 text-center">
+              <img
+                src="https://via.placeholder.com/100"
+                alt="Mentor 8"
+                class="mx-auto rounded-full mb-2 border-2 border-purple-500"
+              />
+              <h4 class="text-lg font-semibold text-purple-300 mb-1">
+                Pratham Batra
+              </h4>
+              <p class="text-gray-400 text-sm">Expertise: AI</p>
+              <p class="text-gray-400 text-sm">
+                помогать: "I specialize in artificial intelligence."
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-gray-900 rounded-lg shadow-md hover:shadow-lg transition duration-300 slide-up animate__animated animate__slideInUp animate__delay-800ms"
+          >
+            <div class="p-4 text-center">
+              <img
+                src="https://via.placeholder.com/100"
+                alt="Mentor 9"
+                class="mx-auto rounded-full mb-2 border-2 border-purple-500"
+              />
+              <h4 class="text-lg font-semibold text-purple-300 mb-1">
+                Teeksha Harish
+              </h4>
+              <p class="text-gray-400 text-sm">Expertise: Blockchain</p>
+              <p class="text-gray-400 text-sm">
+                помогать: "I can guide you in blockchain technology."
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-gray-900 rounded-lg shadow-md hover:shadow-lg transition duration-300 slide-up animate__animated animate__slideInUp animate__delay-900ms"
+          >
+            <div class="p-4 text-center">
+              <img
+                src="https://via.placeholder.com/100"
+                alt="Mentor 10"
+                class="mx-auto rounded-full mb-2 border-2 border-purple-500"
+              />
+              <h4 class="text-lg font-semibold text-purple-300 mb-1">
+                Dhruv Bakshi
+              </h4>
+              <p class="text-gray-400 text-sm">Expertise: DevOps</p>
+              <p class="text-gray-400 text-sm">
+                помогать: "I can help you with DevOps practices."
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-gray-900 rounded-lg shadow-md hover:shadow-lg transition duration-300 slide-up animate__animated animate__slideInUp animate__delay-1000ms"
+          >
+            <div class="p-4 text-center">
+              <img
+                src="https://via.placeholder.com/100"
+                alt="Mentor 11"
+                class="mx-auto rounded-full mb-2 border-2 border-purple-500"
+              />
+              <h4 class="text-lg font-semibold text-purple-300 mb-1">
+                Suhani Nagpal
+              </h4>
+              <p class="text-gray-400 text-sm">Expertise: Databases</p>
+              <p class="text-gray-400 text-sm">
+                помогать: "I can help you with database design."
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-gray-900 rounded-lg shadow-md hover:shadow-lg transition duration-300 slide-up animate__animated animate__slideInUp animate__delay-1100ms"
+          >
+            <div class="p-4 text-center">
+              <img
+                src="https://via.placeholder.com/100"
+                alt="Mentor 12"
+                class="mx-auto rounded-full mb-2 border-2 border-purple-500"
+              />
+              <h4 class="text-lg font-semibold text-purple-300 mb-1">
+                Tanmay Arora
+              </h4>
+              <p class="text-gray-400 text-sm">Expertise: Frontend</p>
+              <p class="text-gray-400 text-sm">
+                помогать: "I can help you with frontend frameworks."
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-gray-900 rounded-lg shadow-md hover:shadow-lg transition duration-300 slide-up animate__animated animate__slideInUp animate__delay-1200ms"
+          >
+            <div class="p-4 text-center">
+              <img
+                src="https://via.placeholder.com/100"
+                alt="Mentor 13"
+                class="mx-auto rounded-full mb-2 border-2 border-purple-500"
+              />
+              <h4 class="text-lg font-semibold text-purple-300 mb-1">
+                Aditya Girdhar
+              </h4>
+              <p class="text-gray-400 text-sm">Expertise: Backend</p>
+              <p class="text-gray-400 text-sm">
+                помогать: "I can help you with backend development."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="absolute top-10 left-10 animate__animated animate__rotateIn">
+        <i
+          class="fa-solid fa-users- медицинские text-purple-400 text-5xl opacity-50"
+        ></i>
+      </div>
+      <div
+        class="absolute bottom-10 right-10 animate__animated animate__rotateIn animate__delay-1s"
+      >
+        <i
+          class="fa-solid fa-hands-helping text-purple-400 text-6xl opacity-50"
+        ></i>
+      </div>
+    </section>
+
+    <section id="prizes" class="py-32 bg-gray-900 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 fade-in">
+        <h2 class="section-title text-yellow-400 animate__animated">
+          Win Big at DevCation!
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
+          <div
+            class="bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition duration-300 slide-up animate__animated animate__slideInUp"
+          >
+            <div class="p-8 text-center">
+              <i
+                class="fa-solid fa-trophy text-yellow-400 text-5xl mb-4 animate__animated animate__bounce animate__infinite"
+              ></i>
+              <h3
+                class="text-2xl font-semibold text-teal-300 mb-2 animate__animated animate__fadeIn"
+              >
+                Hack & Solve Winners
+              </h3>
+              <p
+                class="text-gray-400 text-lg mb-4 animate__animated animate__fadeIn animate__delay-200ms"
+              >
+                Cash Prize with swag kits, medals, certificates, social media
+                shoutouts...
+              </p>
+              <ul
+                class="list-disc list-inside text-gray-300 animate__animated animate__fadeIn animate__delay-400ms text-left"
+              >
+                <li>💰 Cash Prize</li>
+                <li>🎁 Swag Kits</li>
+                <li>🏅 Medals & Certificates</li>
+                <li>📢 Social Media Shoutouts</li>
+                <li>🤝 Interview Buddy Mock Interviews</li>
+                <li>🧑‍💻 Codecrafter Membership</li>
+                <li>🎟️ Unstop Coupons</li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition duration-300 slide-up animate__animated animate__slideInUp animate__delay-100ms"
+          >
+            <div class="p-8 text-center">
+              <i
+                class="fa-solid fa-gift text-pink-400 text-5xl mb-4 animate__animated animate__tada animate__infinite"
+              ></i>
+              <h3
+                class="text-2xl font-semibold text-teal-300 mb-2 animate__animated animate__fadeIn"
+              >
+                Mini Event Winners
+              </h3>
+              <p
+                class="text-gray-400 text-lg mb-4 animate__animated animate__fadeIn animate__delay-200ms"
+              >
+                Goodies, certificates, social media shoutouts, Unstop coupons.
+              </p>
+              <ul
+                class="list-disc list-inside text-gray-300 animate__animated animate__fadeIn animate__delay-400ms text-left"
+              >
+                <li>🎁 Goodies</li>
+                <li>🏅 Certificates</li>
+                <li>📢 Social Media Shoutouts</li>
+                <li>🎟️ Unstop Coupons</li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition duration-300 slide-up animate__animated animate__slideInUp animate__delay-200ms"
+          >
+            <div class="p-8 text-center">
+              <i
+                class="fa-solid fa-award text-orange-400 text-5xl mb-4 animate__animated animate__swing animate__infinite"
+              ></i>
+              <h3
+                class="text-2xl font-semibold text-teal-300 mb-2 animate__animated animate__fadeIn"
+              >
+                All Finalists
+              </h3>
+              <p
+                class="text-gray-400 text-lg mb-4 animate__animated animate__fadeIn animate__delay-200ms"
+              >
+                Exciting goodies, certificates, Unstop coupons.
+              </p>
+              <ul
+                class="list-disc list-inside text-gray-300 animate__animated animate__fadeIn animate__delay-400ms text-left"
+              >
+                <li>🎁 Exciting Goodies</li>
+                <li>🏅 Certificates</li>
+                <li>🎟️ Unstop Coupons</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mt-12 text-center zoom-in animate__animated animate__bounceIn animate__delay-600ms"
+        >
+          <p class="text-xl text-yellow-300">
+            All Participants get certificates, 50% Unstop coupons, and exclusive
+            discount vouchers from IB!
+          </p>
+        </div>
+      </div>
+      <div
+        class="absolute top-10 left-10 animate__animated animate__shakeY animate__infinite animate__delay-1s"
+      >
+        <i class="fa-solid fa-gift text-pink-400 text-4xl opacity-50"></i>
+      </div>
+      <div
+        class="absolute bottom-10 right-10 animate__animated animate__shakeX animate__infinite animate__delay-1.5s"
+      >
+        <i class="fa-solid fa-trophy text-yellow-400 text-5xl opacity-50"></i>
+      </div>
+    </section>
+
+    <section id="sponsors" class="py-32 bg-gray-900 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 fade-in">
+        <h2
+          class="section-title text-green-400 animate__animated animate__bounceIn"
+        >
+          Our League of Extraordinary Sponsors!
+        </h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12">
+          <div
+            class="bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition duration-300 zoom-in animate__animated animate__zoomIn"
+          >
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQahRyu09zrcdsE5Ueu7GM2r8U1PVlYSMakNw&s"
+              alt="RotaractClub"
+              class="p-6 w-full h-auto object-contain"
+            />
+          </div>
+          <div
+            class="bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition duration-300 zoom-in animate__animated animate__zoomIn animate__delay-100ms"
+          >
+            <img
+              src="https://play-lh.googleusercontent.com/Sn4FCvXPL21HgxKO_-Oj0_ldYA8YH2muN6enGKpBylzvYpCa_cZTqbU6VEXYRtFGwg"
+              alt="Unstop"
+              class="p-6 w-full h-auto object-contain"
+            />
+          </div>
+          <div
+            class="bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition duration-300 zoom-in animate__animated animate__zoomIn animate__delay-200ms"
+          >
+            <img
+              src="https://www.geekroom.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FTransparent%20logo.4261b4ac.png&w=1080&q=75"
+              alt="geekroom"
+              class="p-6 w-full h-auto object-contain"
+            />
+          </div>
+          <div
+            class="bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition duration-300 zoom-in animate__animated animate__zoomIn animate__delay-300ms"
+          >
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtKuLoJoYJIW__Ab5dQr6wKEXFn4VRXtLKJXqLF77YTRdAfeGaAYEMzsotvij5-2_k-fk&usqp=CAU"
+              alt="Sprint"
+              class="p-6 w-full h-auto object-contain"
+            />
+          </div>
+          <div
+            class="bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition duration-300 zoom-in animate__animated animate__zoomIn animate__delay-400ms"
+          >
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJrquzHwOxN0bUKnchqkQIy7QhkvzUftsDb70tbF-TbzdwohwOLaZukMkKY6CgJacQ45M&usqp=CAU"
+              alt="InterviewBuddy"
+              class="p-6 w-full h-auto object-contain"
+            />
+          </div>
+          <div
+            class="bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition duration-300 zoom-in animate__animated animate__zoomIn animate__delay-500ms"
+          >
+            <img
+              src="https://media.licdn.com/dms/image/v2/D560BAQEqzh_Uhd_rbw/company-logo_200_200/company-logo_200_200/0/1684437783960/codecraftersio_logo?e=2147483647&v=beta&t=xehlblVMw6zGFt5W7qBeiK4MkSjRxbxndVn_SSA-4h0"
+              alt="CodeCrafters"
+              class="p-6 w-full h-auto object-contain"
+            />
+          </div>
+        </div>
+        <div
+          class="mt-12 text-center zoom-in animate__animated animate__pulse animate__infinite animate__delay-600ms"
+        >
+          <button
+            class="bg-green-500 hover:bg-green-600 text-white py-4 px-10 rounded-full text-lg font-semibold transition duration-300"
+          >
+            Become a Legendary Sponsor!
+          </button>
+        </div>
+      </div>
+      <div class="absolute top-10 left-10 animate__animated animate__rotateIn">
+        <i class="fa-solid fa-handshake text-green-400 text-5xl opacity-50"></i>
+      </div>
+      <div
+        class="absolute bottom-10 right-10 animate__animated animate__rotateIn animate__delay-1s"
+      >
+        <i class="fa-solid fa-coins text-yellow-400 text-6xl opacity-50"></i>
+      </div>
+    </section>
+    <section id="faq" class="py-32 bg-gray-800 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 fade-in">
+        <h2
+          class="section-title text-yellow-400 animate__animated animate__lightSpeedInRight"
+        >
+          Frequently Asked Questions
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div
+            class="bg-gray-900 rounded-lg shadow-md hover:shadow-lg transition duration-300 slide-right animate__animated animate__slideInRight"
+          >
+            <div class="p-8">
+              <h4 class="text-xl font-semibold text-pink-300 mb-4">
+                <i class="fa-solid fa-question-circle mr-3 text-yellow-400"></i>
+                Who can contribute?
+              </h4>
+              <p class="text-gray-400 text-lg">
+                Everyone with a passion for technology and innovation is welcome
+                to contribute! Whether you're a student, a professional, or a
+                hobbyist, we encourage you to participate.
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-gray-900 rounded-lg shadow-md hover:shadow-lg transition duration-300 slide-left animate__animated animate__slideInLeft animate__delay-200ms"
+          >
+            <div class="p-8">
+              <h4 class="text-xl font-semibold text-pink-300 mb-4">
+                <i class="fa-solid fa-question-circle mr-3 text-yellow-400"></i>
+                Where can we reach out in case of queries?
+              </h4>
+              <p class="text-gray-400 text-lg">
+                For any queries, please reach out to us at
+                <a
+                  href="mailto:support@devcation.com"
+                  class="text-blue-400 hover:text-blue-300 transition duration-200"
+                  >support@devcation.com</a
+                >
+                or join our community forum at
+                <a
+                  href="#"
+                  class="text-blue-400 hover:text-blue-300 transition duration-200"
+                  >forum.devcation.com</a
+                >.
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-gray-900 rounded-lg shadow-md hover:shadow-lg transition duration-300 slide-right animate__animated animate__slideInRight animate__delay-100ms"
+          >
+            <div class="p-8">
+              <h4 class="text-xl font-semibold text-pink-300 mb-4">
+                <i class="fa-solid fa-question-circle mr-3 text-yellow-400"></i>
+                Do I need to have coding experience to participate?
+              </h4>
+              <p class="text-gray-400 text-lg">
+                While some coding experience can be helpful, it's not mandatory.
+                We have tracks and challenges for all skill levels, and
+                mentorship will be provided.
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-gray-900 rounded-lg shadow-md hover:shadow-lg transition duration-300 slide-left animate__animated animate__slideInLeft animate__delay-300ms"
+          >
+            <div class="p-8">
+              <h4 class="text-xl font-semibold text-pink-300 mb-4">
+                <i class="fa-solid fa-question-circle mr-3 text-yellow-400"></i>
+                What happens after the hackathon ends?
+              </h4>
+              <p class="text-gray-400 text-lg">
+                After the hackathon ends, the submitted projects will be
+                reviewed by our judges. Finalists will be selected to pitch
+                their ideas, and winners will be announced at the closing
+                ceremony.
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-gray-900 rounded-lg shadow-md hover:shadow-lg transition duration-300 slide-right animate__animated animate__slideInRight animate__delay-200ms"
+          >
+            <div class="p-8">
+              <h4 class="text-xl font-semibold text-pink-300 mb-4">
+                <i class="fa-solid fa-question-circle mr-3 text-yellow-400"></i>
+                How can I stay updated on hackathon announcements and events?
+              </h4>
+              <p class="text-gray-400 text-lg">
+                Stay updated by following our social media channels and
+                subscribing to our newsletter. All important announcements and
+                event details will be shared there.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="absolute top-10 left-10 animate__animated animate__shakeY animate__infinite animate__delay-1s"
+      >
+        <i class="fa-solid fa-question text-pink-400 text-4xl opacity-50"></i>
+      </div>
+      <div
+        class="absolute bottom-10 right-10 animate__animated animate__shakeX animate__infinite animate__delay-1.5s"
+      >
+        <i class="fa-solid fa-headset text-yellow-400 text-5xl opacity-50"></i>
+      </div>
+    </section>
+
+    <section id="contact" class="py-32 bg-black-800 relative overflow-hidden">
+      <div
+        class="max-w-md mx-auto p-10 bg-gray-700 rounded-lg shadow-xl fade-in animate__animated animate__fadeInUp"
+      >
+        <h2
+          class="section-title text-pink-400 animate__animated animate__heartBeat animate__delay-1s"
+        >
+          Let's Connect & Create!
+        </h2>
+        <form class="contact-form">
+          <div class="mb-8 slide-up animate__animated animate__slideInUp">
+            <label
+              for="name"
+              class="block text-gray-400 text-lg font-semibold mb-3"
+              ><i class="fa-solid fa-user mr-2 text-pink-400"></i> Your Awesome
+              Name</label
+            >
+            <input
+              type="text"
+              id="name"
+              class="shadow appearance-none border rounded w-full py-4 px-6 text-gray-300 leading-tight focus:outline-none focus:ring-2 focus:ring-pink-500 bg-gray-700"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div
+            class="mb-8 slide-up animate__animated animate__slideInUp animate__delay-200ms"
+          >
+            <label
+              for="email"
+              class="block text-gray-400 text-lg font-semibold mb-3"
+              ><i class="fa-solid fa-envelope mr-2 text-yellow-400"></i> Your
+              Super Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              class="shadow appearance-none border rounded w-full py-4 px-6 text-gray-300 leading-tight focus:outline-none focus:ring-2 focus:ring-yellow-500 bg-gray-700"
+              placeholder="Your email address"
+            />
+          </div>
+          <div
+            class="mb-10 slide-up animate__animated animate__slideInUp animate__delay-400ms"
+          >
+            <label
+              for="message"
+              class="block text-gray-400 text-lg font-semibold mb-3"
+              ><i class="fa-solid fa-message mr-2 text-green-400"></i> Your
+              Brilliant Message</label
+            >
+            <textarea
+              id="message"
+              rows="6"
+              class="shadow appearance-none border rounded w-full py-4 px-6 text-gray-300 leading-tight focus:outline-none focus:ring-2 focus:ring-green-500 bg-gray-700"
+              placeholder="Tell us what's on your mind!"
+            ></textarea>
+          </div>
+          <div
+            class="flex items-center justify-center slide-up animate__animated animate__zoomIn animate__delay-600ms"
+          >
+            <button
+              type="submit"
+              class="submit-button bg-purple-500 hover:bg-purple-600 text-white py-4 px-10 rounded-full text-lg font-semibold transition duration-300"
+            >
+              <i class="fa-solid fa-paper-plane mr-3"></i> Send It Off!
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="absolute top-10 right-10 animate__animated animate__rotateIn">
+        <i class="fa-solid fa-headset text-pink-400 text-5xl opacity-50"></i>
+      </div>
+      <div
+        class="absolute bottom-10 left-10 animate__animated animate__rotateIn animate__delay-1s"
+      >
+        <i class="fa-solid fa-comments text-yellow-400 text-6xl opacity-50"></i>
+      </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-16 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div>
+            <h3
+              class="text-lg font-semibold text-yellow-400 mb-6 animate__animated animate__fadeIn"
+            >
+              Explore the Universe
+            </h3>
+            <ul
+              class="space-y-3 animate__animated animate__fadeIn animate__delay-200ms"
+            >
+              <li>
+                <a
+                  href="#hero"
+                  class="hover:text-yellow-300 transition duration-200 footer-link"
+                  ><i class="fa-solid fa-house mr-2 text-pink-400"></i> Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="hover:text-yellow-300 transition duration-200 footer-link"
+                  ><i class="fa-solid fa-info-circle mr-2 text-pink-400"></i>
+                  About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#speakers"
+                  class="hover:text-yellow-300 transition duration-200 footer-link"
+                  ><i class="fa-solid fa-users mr-2 text-pink-400"></i>
+                  Speakers</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#schedule"
+                  class="hover:text-yellow-300 transition duration-200 footer-link"
+                  ><i class="fa-solid fa-calendar-alt mr-2 text-pink-400"></i>
+                  Schedule</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#sponsors"
+                  class="hover:text-yellow-300 transition duration-200 footer-link"
+                  ><i class="fa-solid fa-handshake mr-2 text-pink-400"></i>
+                  Sponsors</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="hover:text-yellow-300 transition duration-200 footer-link"
+                  ><i class="fa-solid fa-envelope mr-2 text-pink-400"></i>
+                  Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3
+              class="text-lg font-semibold text-pink-400 mb-6 animate__animated animate__fadeIn animate__delay-400ms"
+            >
+              Join the Community Vibe
+            </h3>
+            <ul
+              class="space-y-3 animate__animated animate__fadeIn animate__delay-600ms"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-pink-300 transition duration-200 footer-link"
+                  ><i class="fa-solid fa-comments mr-2 text-yellow-400"></i>
+                  Forums</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-pink-300 transition duration-200 footer-link"
+                  ><i
+                    class="fa-solid fa-code-of-conduct mr-2 text-yellow-400"
+                  ></i>
+                  Code of Conduct</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-pink-300 transition duration-200 footer-link"
+                  ><i class="fa-solid fa-life-ring mr-2 text-yellow-400"></i>
+                  Support</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3
+              class="text-lg font-semibold text-yellow-400 mb-6 animate__animated animate__fadeIn animate__delay-800ms"
+            >
+              Connect with the Cosmos
+            </h3>
+            <p
+              class="text-gray-400 mb-6 animate__animated animate__fadeIn animate__delay-1s"
+            >
+              Follow us for cosmic updates and developer memes:
+            </p>
+            <div
+              class="flex space-x-6 animate__animated animate__fadeIn animate__delay-1.2s"
+            >
+              <a
+                href="#"
+                class="text-yellow-400 hover:text-pink-400 transition duration-300"
+                ><i class="fab fa-twitter fa-2x social-icon"></i
+              ></a>
+              <a
+                href="#"
+                class="text-yellow-400 hover:text-pink-400 transition duration-300"
+                ><i class="fab fa-linkedin fa-2x social-icon"></i
+              ></a>
+              <a
+                href="#"
+                class="text-yellow-400 hover:text-pink-400 transition duration-300"
+                ><i class="fab fa-github fa-2x social-icon"></i
+              ></a>
+              <a
+                href="#"
+                class="text-yellow-400 hover:text-pink-400 transition duration-300"
+                ><i class="fab fa-medium fa-2x social-icon"></i
+              ></a>
+            </div>
+          </div>
+          <div>
+            <h3
+              class="text-lg font-semibold text-pink-400 mb-6 animate__animated animate__fadeIn animate__delay-1.4s"
+            >
+              Stay in the Loophole
+            </h3>
+            <p
+              class="text-gray-400 mb-6 animate__animated animate__fadeIn animate__delay-1.6s"
+            >
+              Subscribe for electrifying news and exclusive content:
+            </p>
+            <form class="animate__animated animate__fadeIn animate__delay-1.8s">
+              <input
+                type="email"
+                class="bg-gray-700 border border-gray-600 rounded-full py-3 px-6 text-gray-300 w-full focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                placeholder="Your Cosmic Email"
+              />
+              <button
+                type="submit"
+                class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 py-3 px-6 rounded-full font-semibold mt-4 transition duration-300 w-full"
+              >
+                Beam Me Up!
+              </button>
+            </form>
+          </div>
+        </div>
+        <div
+          class="mt-12 text-center text-gray-500 border-t border-gray-700 pt-6 animate__animated animate__fadeIn animate__delay-2s"
+        >
+          &copy; 2025 DevCation. All rights reserved. Crafted with
+          <i class="fa-solid fa-heart text-pink-400"></i> by the DevCation Crew.
+        </div>
+      </div>
+      <div
+        class="absolute top-10 left-10 animate__animated animate__rotateInDownLeft"
+      >
+        <i class="fa-solid fa-atom text-pink-400 text-6xl opacity-40"></i>
+      </div>
+      <div
+        class="absolute bottom-10 right-10 animate__animated animate__rotateInUpRight animate__delay-1s"
+      >
+        <i
+          class="fa-solid fa-space-shuttle text-yellow-400 text-5xl opacity-40"
+        ></i>
+      </div>
+    </footer>
+
+    <script>
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Intersection Observer for animations on scroll
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("active");
+              observer.unobserve(entry.target); // Stop observing once animated
+            }
+          });
+        },
+        { threshold: 0.15 }
+      ); // Trigger when 15% of the element is visible
+
+      const fadeElements = document.querySelectorAll(".fade-in");
+      fadeElements.forEach((el) => observer.observe(el));
+
+      const slideUpElements = document.querySelectorAll(".slide-up");
+      slideUpElements.forEach((el) => observer.observe(el));
+
+      const slideLeftElements = document.querySelectorAll(".slide-left");
+      slideLeftElements.forEach((el) => observer.observe(el));
+
+      const slideRightElements = document.querySelectorAll(".slide-right");
+      slideRightElements.forEach((el) => observer.observe(el));
+
+      const zoomInElements = document.querySelectorAll(".zoom-in");
+      zoomInElements.forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>
